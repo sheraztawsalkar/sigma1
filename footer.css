@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: end;
+    height: 100vh;
+}
+footer
+{
+    /* flex will control only childreen not grandchildreen or not control itself */
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 40px 0px;
+}
+#left
+{
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    border-right: 2px solid yellowgreen;
+
+}
+#right
+{
+    width: 35%;
+    /* background-color: yellow; */
+    /* flex means everything should be in single line  */
+    display: flex;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 2px;
+}
+li
+{
+    text-decoration: none;
+    color: white;
+}
+h5{
+    color: greenyellow;
+    margin-top: 0;
+}
+#menu
+{
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+#fb
+{
+    /* if we dont want to overlap we use flex property is important */
+        /* if we want to overlap we use position property is important */
+        /* align items for vertical  */
+
+    position: relative;
+    
+}
+#fb:hover #menu
+{
+    display: block;
+}
